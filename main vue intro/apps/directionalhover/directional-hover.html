@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+
+<head>
+  <meta charset="UTF-8">
+  <title> </title>
+  <!-- If IE use the latest rendering engine -->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Set the page to the width of the device and set the zoon level -->
+
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+
+  <!-- BOOTSTRAP REFERENECE -->
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="velocity.min.js"></script>
+  <script src="anime.min.js"></script>
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="font-awesome.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+  <script src="paroller.js"></script>
+  <script src="paroller.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.2.1/vue-router.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+
+
+
+  <link href = 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css' rel = 'stylesheet'>
+  <script src = 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js'></script>
+  <script src = 'https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js'></script>
+<style>
+:root { --mainBackgroundColor: white; --fontColor: black; }
+ * { box-sizing: border-box; }
+[class*="col-NZ"] { float: left; }
+.show-on-mobile, .show-on-tablet { display: none}
+.white-text { color: white; }
+.col-NZ-1{ width: 8.33%; }
+.col-NZ-2 { width: 16.66%; }
+.col-NZ-3 { width: 25%; }
+.col-NZ-4 { width: 33.33%; }
+.col-NZ-5 { width: 41.66%; }
+.col-NZ-6 { width: 50% }
+.col-NZ-7 { width: 58.33% }
+.col-NZ-8 { width: 66.66% }
+.col-NZ-9 { width: 75% }
+.col-NZ-10 { width:83.33% }
+.col-NZ-11 { width: 91.66% }
+.col-NZ-12 { width: 100% }
+   @media(max-width: 1000px) {
+.hide-on-tablet { display: none; }
+.show-on-tablet { display: block; }
+.col-NZ-1-tablet { width: 8.33%; }
+.col-NZ-2-tablet { width: 16.66%; }
+.col-NZ-3-tablet { width: 25%; }
+.col-NZ-4-tablet { width: 33.33%; }
+.col-NZ-5-tablet { width: 41.66%; }
+.col-NZ-6-tablet{ width: 50%; }
+.col-NZ-7-tablet { width: 58.33%; }
+.col-NZ-8-tablet { width: 66.66%; }
+.col-NZ-9-tablet { width: 75%; }
+.col-NZ-10-tablet { width: 83.33%; }
+.col-NZ-11-tablet { width: 91.66%; }
+.col-NZ-12-tablet { width: 100%; }}
+    @media(max-width: 767px) {
+.hide-on-mobile { display: none; }
+.show-on-mobile { display: block; }
+.col-NZ-1-mobile { width: 8.33%; }
+.col-NZ-2-mobile { width: 16.66%; }
+.col-NZ-3-mobile { width: 25%; }
+.col-NZ-4-mobile { width: 33.33%; }
+.col-NZ-5-mobile { width: 41.66%; }
+.col-NZ-6-mobile{ width: 50%; }
+.col-NZ-7-mobile { width: 58.33%; }
+.col-NZ-8-mobile { width: 66.66%; }
+.col-NZ-9-mobile { width: 75%; }
+.col-NZ-10-mobile { width: 83.33%; }
+.col-NZ-11-mobile { width: 91.66%; }
+.col-NZ-12-mobile { width: 100%; }
+  }
+  /* The magic */
+  .col {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slide {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*
+      Visibility delay gives the previously hovered element time to slide out before disappearing.
+      Remove the `visibility` transition to slide in current element without sliding out previous element
+    */
+    transition: all 0.275s ease-in-out, visibility 0s 0.275s;
+    visibility: hidden;
+    will-change: transform;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+
+  .row:hover ~ .row .slide {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  .row:hover .slide {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  .row:hover .col:hover ~ .col .slide {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  .row:hover .col:hover .slide {
+    -webkit-transform: none;
+            transform: none;
+    visibility: visible;
+    transition-delay: 0s;
+  }
+
+  /* Pen styling */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #fefefe;
+    color: #333;
+    font: 14px /1.5 "Fira Sans", sans-serif;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: 1.5em 0.5rem 1em;
+    text-align: center;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 1200px;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .col {
+    color: #fff;
+    flex: 1 1 auto;
+    min-height: 260px;
+    position: relative;
+  }
+  .col h2 {
+    font-weight: 300;
+    font-size: 1.33333rem;
+    line-height: 1.25;
+    margin: 0;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 0;
+  }
+/*
+  .col:nth-child(2) {
+    min-width: 20%;
+  }
+
+  .col:nth-child(4) {
+    min-width: 33%;
+  }
+
+  .col:nth-child(3) + .col:nth-child(3) {
+    min-width: 50%;
+  } */
+
+  .photo-container {
+    background: #0f0523 50% 50% / cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+    -webkit-transform-origin: bottom right;
+            transform-origin: bottom right;
+  }
+  .photo-container::before {
+    background: linear-gradient(transparent, rgba(67, 17, 51, 0.5), #000320);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .col:hover .photo-container {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+
+  .slide {
+    background: rgba(25, 1, 21, 0.8);
+    padding: 0 1.5rem;
+  }
+
+</style>
+<body>
+
+  <h1>Hover around the boxes below</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="photo-container" style = 'background-image:URL("https://ca.slack-edge.com/T27NQBR99-U2CFDT99N-090680d0c985-1024");'></div>
+        <h2>Alec 125 </h2>
+        <div class="slide">
+          <p>Facere illo pariatur necessitatibus fugit quo impedit, quae, corporis placeat recusandae dolor ipsa nobis!</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="photo-container" style = 'background-image:URL("https://ca.slack-edge.com/T27NQBR99-U2CFDT99N-090680d0c985-1024");'></div>
+        <h2>Alec 215 </h2>
+        <div class="slide">
+          <p>Quam molestiae ipsa sapiente mollitia, nobis.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="photo-container" style = 'background-image:URL("https://ca.slack-edge.com/T27NQBR99-U2CFDT99N-090680d0c985-1024");'></div>
+        <h2>Alec 115 </h2>
+        <div class="slide">
+          <p>Autem possimus perspiciatis, eaque quos repudiandae modi labore sed repellat dolorum magnam praesentium expedita esse tempore saepe nulla.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="photo-container" style = 'background-image:URL("https://ca.slack-edge.com/T27NQBR99-U2CFDT99N-090680d0c985-1024");'></div>
+        <h2>Alec 130 </h2>
+        <div class="slide">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="photo-container" style = 'background-image:URL("https://ca.slack-edge.com/T27NQBR99-U2CFDT99N-090680d0c985-1024");'></div>
+        <h2>Alec 125 </h2>
+        <div class="slide">
+          <p>Facere illo pariatur necessitatibus fugit quo impedit, quae, corporis placeat recusandae dolor ipsa nobis!</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="photo-container" style = 'background-image:URL("https://ca.slack-edge.com/T27NQBR99-U2CFDT99N-090680d0c985-1024");'></div>
+        <h2>Alec 215 </h2>
+        <div class="slide">
+          <p>Quam molestiae ipsa sapiente mollitia, nobis.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="photo-container" style = 'background-image:URL("https://ca.slack-edge.com/T27NQBR99-U2CFDT99N-090680d0c985-1024");'></div>
+        <h2>Alec 115 </h2>
+        <div class="slide">
+          <p>Autem possimus perspiciatis, eaque quos repudiandae modi labore sed repellat dolorum magnam praesentium expedita esse tempore saepe nulla.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="photo-container" style = 'background-image:URL("https://ca.slack-edge.com/T27NQBR99-U2CFDT99N-090680d0c985-1024");'></div>
+        <h2>Alec 130 </h2>
+        <div class="slide">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+
+
+      </div>
+
+</body>
+
+
+
+</html>

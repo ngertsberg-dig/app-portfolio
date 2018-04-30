@@ -1,0 +1,265 @@
+   <!DOCTYPE html>
+<html lang = "en-ca">
+<head>
+<meta charset = "UTF-8">
+<title> </title>
+<!-- If IE use the latest rendering engine -->
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+ <!-- Set the page to the width of the device and set the zoon level -->
+
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+
+<!-- BOOTSTRAP REFERENECE -->
+
+<link rel = "stylesheet" type = "text/css" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src = "velocity.min.js"></script>
+<script src = "anime.min.js"></script>
+<link rel="stylesheet" href="font-awesome.min.css">
+<link rel="stylesheet" href="font-awesome.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+<link rel= "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel= "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="paroller.js"></script>
+<script src="paroller.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+<style>
+:root{
+  --mainBackgroundColor:white;
+  --fontColor:black;
+}
+* {box-sizing: border-box;}
+[class*="col-NZ"] {
+   float: left;
+   padding: 15px;
+   border: 1px solid red;
+}
+.col-NZ-1 {width: 8.33%;}
+.col-NZ-2 {width: 16.66%;}
+.col-NZ-3 {width: 25%;}
+.col-NZ-4 {width: 33.33%;}
+.col-NZ-5 {width: 41.66%;}
+.col-NZ-6 {width: 50%}
+.col-NZ-7 {width: 58.33%}
+.col-NZ-8 {width: 66.66%}
+.col-NZ-9 {width: 75%}
+.col-NZ-10 {width: 83.33%}
+.col-NZ-11 {width: 91.66%}
+.col-NZ-12 {width: 100%}
+
+@media(max-width: 1000px) {
+.col-NZ-1-tablet {width: 8.33%;}
+.col-NZ-2-tablet {width: 16.66%;}
+.col-NZ-3-tablet {width: 25%;}
+.col-NZ-4-tablet {width: 33.33%;}
+.col-NZ-5-tablet {width: 41.66%;}
+.col-NZ-6-tablet {width: 50%;}
+.col-NZ-7-tablet {width: 58.33%;}
+.col-NZ-8-tablet {width: 66.66%;}
+.col-NZ-9-tablet {width: 75%;}
+.col-NZ-10-tablet {width: 83.33%;}
+.col-NZ-11-tablet {width: 91.66%;}
+.col-NZ-12-tablet {width: 100%;}
+}
+
+@media(max-width: 767px) {
+.col-NZ-1-mobile {width: 8.33%;}
+.col-NZ-2-mobile {width: 16.66%;}
+.col-NZ-3-mobile {width: 25%;}
+.col-NZ-4-mobile {width: 33.33%;}
+.col-NZ-5-mobile {width: 41.66%;}
+.col-NZ-6-mobile {width: 50%;}
+.col-NZ-7-mobile {width: 58.33%;}
+.col-NZ-8-mobile {width: 66.66%;}
+.col-NZ-9-mobile {width: 75%;}
+.col-NZ-10-mobile {width: 83.33%;}
+.col-NZ-11-mobile {width: 91.66%;}
+.col-NZ-12-mobile {width: 100%;}
+}
+
+.pokemon-box{
+  border:1px solid blue;
+  float:left;
+  padding:25px;
+  width:20%;
+  transition:all 0.52s ease;
+  text-align:center;
+}
+.pokemon-info{
+  display:block;
+}
+@media(max-width: 767px) {
+    .pokemon-box {
+        width:50%;
+    }
+}
+.pokemon-box:hover{
+cursor:pointer;
+
+background-color:aqua;
+}
+
+.versus{
+    width:40% !important;
+    height:100px;
+    background-color:red;
+    position:absolute;
+    z-index:999;
+    opacity:0;
+    transition:all 0.5s ease;
+}
+ul,li{
+  list-style:none;
+  margin:0px;
+  padding:0px;
+}
+.versus img{
+    float:left;
+}
+
+.versus {
+    display: flex;
+    justify-content: space-around;
+}
+
+.versus::after {
+    content: 'VS';
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    font-size: 35px;
+    font-family: monospace;
+    width: 100%;
+}
+
+@media(max-width: 1000px) {
+    .versus {
+        width:65% !important;
+    }
+}
+.versus {
+    position: fixed !Important;
+}
+#startFightButton{
+    z-index:9999 !important;
+    position:absolute;
+    height:25%;
+    top:75%;
+    width:25%;
+}
+.versus{
+    background-color:rgba(0, 255, 255, 0.8) !Important;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+<div id = "pokemon">
+  <ul>
+
+
+  </ul>
+  <div class="versus">
+  <div class="versus-one">
+
+      </div>
+
+  <div class="versus-two">
+
+
+  </div>
+  <button id = 'startFightButton'>Fight!</button>
+</div>
+
+</div>
+
+<script>
+
+if(!$(".pokemon-box").is(":visible")){
+  $("body").append("<h1 id = 'fetching'><img src = 'lava.gif'>Fetching Pokemon<img src = 'lava.gif'></h1>");
+}
+function checkIfLoaded(){
+  if($(".pokemon-box").is(":visible")){
+    $("#fetching").remove();
+  }
+}
+setInterval(checkIfLoaded,1);
+$("#startFightButton").hide();
+//API script to grab all the pokemon
+for(var pokemonNumber = 1;pokemonNumber!=722;pokemonNumber++){
+  var link  = "http://pokeapi.salestock.net/api/v2/pokemon-form/" + pokemonNumber;
+$.get( link , function( data ) {
+  $( "#pokemon ul" ).append("<li><div class = 'pokemon-box " + data.name +"'" + "id =" + "'" + data.id +"'" + "style = 'display:none;position:relative;left:-150px;transition:all 0.55s ease;transform:rotateZ(30deg);'><img src = "+ data.sprites['front_default'] +">" + "<p class = 'pokemon-info'>" +  data.name + "</p></li>");
+  $(".pokemon-box").fadeIn(1000);
+  $(".pokemon-box").css({"transform":"translateX(150px)"});
+}, "json" );
+}
+</script>
+<script>
+
+//click function when a user clicks a box
+$("ul").click(function(e){
+  var clickDiv = e.target;
+  var clickedPokemon = $(clickDiv).parent();
+$(".versus").addClass("display-pokemon-overlay");
+if($(".versus").hasClass("display-pokemon-overlay")){
+$(".versus").css({"opacity":"1"});
+}
+$("body").toggleClass("firstPokemonPicked");
+
+
+var clickedPokemonID = $(clickedPokemon).attr("id");
+var clickedPokemonImage = $(clickedPokemon).find("img").attr("src");
+
+if($("body").hasClass("firstPokemonPicked")){
+$(".versus-one").html('<img src =" ' + clickedPokemonImage + '" id = "' + clickedPokemonID + '">');
+}
+else{
+$(".versus-two").html('<img src =" ' + clickedPokemonImage + '" id = "' + clickedPokemonID + '">');
+$("#startFightButton").fadeIn();
+}
+});
+
+
+$("#startFightButton").click(function(){
+
+var pokemonIDOne = $(".versus-one img").attr("id");
+var pokemonIDTwo  = $(".versus-two img").attr("id");
+
+localStorage.setItem("pokemonOneStorage",pokemonIDOne);
+localStorage.setItem("pokemonTwoStorage",pokemonIDTwo);
+
+window.location.href = 'fightIndex.html'
+});
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>

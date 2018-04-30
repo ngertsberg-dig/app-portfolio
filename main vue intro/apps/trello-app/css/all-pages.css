@@ -1,0 +1,232 @@
+:root { --mainBackgroundColor: white; --fontColor: black; }
+ * { box-sizing: border-box; }
+[class*="col-NZ"] { float: left; }
+.show-on-mobile, .show-on-tablet { display: none}
+.white-text { color: white; }
+.col-NZ-1{ width: 8.33%; }
+.col-NZ-2 { width: 16.66%; }
+.col-NZ-3 { width: 25%; }
+.col-NZ-4 { width: 33.33%; }
+.col-NZ-5 { width: 41.66%; }
+.col-NZ-6 { width: 50% }
+.col-NZ-7 { width: 58.33% }
+.col-NZ-8 { width: 66.66% }
+.col-NZ-9 { width: 75% }
+.col-NZ-10 { width:83.33% }
+.col-NZ-11 { width: 91.66% }
+.col-NZ-12 { width: 100% }
+   @media(max-width: 1000px) {
+.hide-on-tablet { display: none; }
+.show-on-tablet { display: block; }
+.col-NZ-1-tablet { width: 8.33%; }
+.col-NZ-2-tablet { width: 16.66%; }
+.col-NZ-3-tablet { width: 25%; }
+.col-NZ-4-tablet { width: 33.33%; }
+.col-NZ-5-tablet { width: 41.66%; }
+.col-NZ-6-tablet{ width: 50%; }
+.col-NZ-7-tablet { width: 58.33%; }
+.col-NZ-8-tablet { width: 66.66%; }
+.col-NZ-9-tablet { width: 75%; }
+.col-NZ-10-tablet { width: 83.33%; }
+.col-NZ-11-tablet { width: 91.66%; }
+.col-NZ-12-tablet { width: 100%; }}
+    @media(max-width: 767px) {
+.hide-on-mobile { display: none; }
+.show-on-mobile { display: block; }
+.col-NZ-1-mobile { width: 8.33%; }
+.col-NZ-2-mobile { width: 16.66%; }
+.col-NZ-3-mobile { width: 25%; }
+.col-NZ-4-mobile { width: 33.33%; }
+.col-NZ-5-mobile { width: 41.66%; }
+.col-NZ-6-mobile{ width: 50%; }
+.col-NZ-7-mobile { width: 58.33%; }
+.col-NZ-8-mobile { width: 66.66%; }
+.col-NZ-9-mobile { width: 75%; }
+.col-NZ-10-mobile { width: 83.33%; }
+.col-NZ-11-mobile { width: 91.66%; }
+.col-NZ-12-mobile { width: 100%; }
+}
+body{
+  font-family:monospace;
+}
+ul{
+  list-style:none;
+}
+div#app {
+    border: 3px solid #42b883;
+    width: 50%;
+    margin: 0 auto;
+    padding:
+}
+
+.note-title {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+body {
+  background: #093028;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+width:100vw;
+height:100vh;
+
+}
+.anchor {
+    background-color: #42b582;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+
+.note-title {
+    padding: 25px;
+    background-color: #ffffffcc;
+    width: 80%;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    padding: 0px;
+}
+.add-note-wrapper input{
+    display:block;
+    width:50%;
+    margin:0 auto;
+    background:none;
+    border:none;
+    border-bottom:2px solid #42b582;
+    font-size:20px;
+    margin-top:20px;
+    margin-bottom:20px;
+
+}
+.importance-box {
+    width: 15%;
+    height: 100px;
+    margin: 20px;
+}
+
+.selected-box {
+    border: 6px solid #42b582;
+}
+
+.importance-box:hover {
+    cursor: pointer;
+    border: 2px dashed #42b582;
+}
+
+.importance-text-boxes {
+    display: flex;
+    justify-content: center;
+}
+
+#highImportance {
+    background-color: red;
+}
+
+#mediumImportance {
+    background-color: orange;
+}
+
+#lowImportance {
+    background-color: lightBlue;
+}
+
+.importance-header h2 {
+    text-align: center;
+    color: #42b582;
+}
+
+input::placeholder {
+    color: #42b582;
+}
+input#submitAddNote {
+    background-color: #42b582;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.22s ease;
+}
+
+input#submitAddNote:hover {
+    transition: all 0.22s ease;
+    border: 2px solid lightblue;
+}
+
+.importance-box {
+    transition: all 0.42s ease;
+}
+
+.importance-box:hover {
+    transition: all 0.42s ease;
+}
+input[type='text'],input[type='textarea']{
+    color:#42b582;
+}
+#appWrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+img#vueLogo {
+    width: 100%;
+    height: 200px;
+}
+#app::before {
+    content: 'NickZack';
+    color: #4dba87;
+    font-size: 10PX;
+    padding-left: 20px;
+}
+.deleteNote {
+    display: inline;
+    float: right;
+}
+
+.deleteNote:hover {
+    cursor: pointer;
+    color: red;
+}
+.note-title{
+  margin-bottom:0px;
+}
+.note-description {
+    width: 69%;
+    background-color: #d1ded9;
+    margin: 0 auto;
+    padding: 25px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #42b582;
+    box-shadow: -5px 5px 20px #435466;
+    position: relative;
+    top: -2px;
+    border-right: 2px solid #42b582;
+    border-left: 2px solid #42b582;
+    border-bottom: 2px solid #42b582;
+    border-top: 2px dashed #42b582;
+    width:0%;
+    opacity:0;
+    display:none;
+    transition:all 0.35s ease;
+}
+
+.note-title {
+    margin-bottom: 0px;
+}
+.note-title:hover{
+  cursor:pointer;
+}
+#activeDescription{
+  transition:all 0.35s ease;
+  width:69%;
+  opacity:1;
+  display:block;
+}
+.showDescription {
+    position: absolute;
+    left: 50%;
+}

@@ -1,0 +1,398 @@
+/*
+** Disable text selection
+*/
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  	                   /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.calendar-container,
+.day-view {
+  border: 1px solid #dadada;
+  margin: 20px auto;
+  width: 100%;
+}
+@media (min-width: 980px) {
+  .calendar-container,
+  .day-view {
+    width: 960px;
+  }
+}
+.calendar-container > header,
+.day-view > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+.calendar-container > header .navigation-arrow i,
+.day-view > header .navigation-arrow i {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.calendar-container .days {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.calendar-container .days .day {
+  position: relative;
+  flex: 1 1 14.2857%;
+  height: 150px;
+  border-right: 1px solid #dadada;
+}
+.calendar-container .days .day:nth-child(7n) {
+  border-right: none;
+}
+.calendar-container .days .day:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(222, 222, 222, 0.8);
+}
+.calendar-container .days .day.active:after {
+  display: none;
+}
+@media (max-width: 600px) {
+  .calendar-container .days .day {
+    height: 120px !important;
+  }
+}
+.calendar-container .days .day header {
+  background-color: #0a7894;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.8em;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .calendar-container .days .day header .day-name {
+    display: none;
+  }
+}
+.calendar-container .days .day .event {
+  position: relative;
+  background-color: #42b5d2;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.8em;
+  margin: 2px 0;
+}
+.calendar-container .days .day .event .details {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #444;
+  color: #444;
+  padding: 10px;
+  opacity: 0;
+  top: -60px;
+  width: 150px;
+  transform: translateY(-20px);
+  visibility: hidden;
+  z-index: 999;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.calendar-container .days .day .event.show .details {
+  opacity: 1;
+  transform: translateY(0px);
+  visibility: visible;
+}
+.calendar-container .days .day .event .fg-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(68, 68, 68, 0.96);
+  opacity: 1;
+  transition: opacity 0.4s ease;
+  z-index: 9999;
+}
+.calendar-container .days .day .event .fg-modal .modal-body {
+  position: relative;
+  background-color: #fff;
+  border-radius: 2px;
+  color: #444;
+  max-width: 400px;
+  opacity: 1;
+  transition: transform 0.4s ease;
+}
+.calendar-container .days .day .event .fg-modal.modal-fade-enter-active, .calendar-container .days .day .event .fg-modal.modal-fade-leave-active {
+  transition: opacity 0.5s;
+}
+.calendar-container .days .day .event .fg-modal.modal-fade-enter-active .modal-body, .calendar-container .days .day .event .fg-modal.modal-fade-leave-active .modal-body {
+  transform: translateY(0px);
+}
+.calendar-container .days .day .event .fg-modal.modal-fade-enter, .calendar-container .days .day .event .fg-modal.modal-fade-leave-to {
+  opacity: 0;
+}
+.calendar-container .days .day .event .fg-modal.modal-fade-enter .modal-body, .calendar-container .days .day .event .fg-modal.modal-fade-leave-to .modal-body {
+  transform: translateY(-20px);
+}
+
+.day-view .close {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.day-view .appointment {
+  background-color: #4f9fb3;
+  color: #fff;
+  font-size: 0.6rem;
+  padding: 10px;
+  border-left: 10px solid #2e879e;
+  overflow-y: scroll;
+}
+.day-view .appointment header {
+  display: flex;
+  justify-content: space-between;
+}
+.day-view .appointment header .client {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.day-view .appointment header .client img {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.day-view .appointment header .client h4 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.day-view .appointment header .times {
+  text-align: right;
+}
+.day-view .appointment p {
+  margin: 0;
+}
+.day-view .hours {
+  padding: 10px;
+}
+.day-view .hours .hour {
+  display: flex;
+  height: 60px;
+}
+.day-view .hours .hour > header {
+  background-color: #0a7894;
+  border-bottom: 2px solid #fff;
+  box-sizing: border-box;
+  color: #fff;
+  flex: 0 0 50px;
+  font-size: 0.6em;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-align: center;
+}
+.day-view .hours .hour section {
+  flex: 1;
+}
+.day-view .agenda {
+  min-height: 400px;
+}
+.day-view .agenda .appointment {
+  height: auto !important;
+  margin: 10px;
+  overflow-y: auto;
+}
+.day-view .agenda .no-appointments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  text-align: center;
+}
+.day-view .agenda .no-appointments i {
+  color: gold;
+  margin: 20px auto;
+}
+div#currentDay {
+    background-color: #ff9600;
+}
+div#userInputAmount {
+    display: inline;
+    color: #09b709;
+}
+#payment-modal{
+
+    border:2px solid red;
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    top:10vh;
+    left:25%;
+    height:75vh;
+    background-color:rgba(10, 120, 148,0.8);
+    }
+    #payment-submit{
+        display:block;
+        margin-top:30px;
+    }
+    .payment-button-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+.storage i:hover{cursor:pointer;}
+
+#payment-modal {
+  flex-direction: column;
+}
+.deducted{
+  background-color:red !important;
+}
+.fg-modal {
+    width: 35%;
+    left:65% !important;
+
+}
+
+.modal-body {
+    width: 100%;
+    height: 50%;
+
+
+}
+.calendar-move{
+  width:62.5%;
+  transition:all 2s ease;
+  float:left;
+  margin-left:25px;
+
+}
+.modal-body p {
+    font-size: 22px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.add-event {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 55%;
+}
+
+.add-event i {
+    transition: all 1.2 ease;
+}
+
+.add-event i:hover {
+    cursor: pointer;
+    transition: all 1.2 ease;
+    transform: scale(1.2);
+}
+.day.noselect.active:hover {
+    transition: all 0.35s ease;
+    background-color: lightblue;
+}
+
+.day i.fa-plus::before {
+    padding: 25px;
+}
+
+#payment-modal i:hover {
+    cursor: pointer !important;
+    color: #ffdbdb;
+    transform: scale(1.2);
+    padding: 0px !Important;
+    margin: 0px !Important;
+    border: none !important;
+}
+
+#payment-modal input[type='text'] {
+    border: none;
+    background: none;
+    background-color: rgba(6, 59, 77, 0.7);
+    width: 33%;
+    padding: 15px 0px;
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    padding-right: 50px;
+    text-align: right;
+}
+
+#payment-modal label {
+    font-size: 25px;
+    color: white;
+}
+
+input[type='submit'] {
+    background: none;
+    border: none;
+    border: 2px solid rgb(6,59,77);
+    width: 100%;
+    height: 100% !important;
+    color: rgba(124, 0, 237,0.5);
+    font-size: 20px;
+}
+
+.payment-button-wrapper::before {
+    content: '';
+    display: block !important;
+    background-color: aliceblue;
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    height: 10%;
+    top: 25%;
+    transform: skewY(-10deg);
+    border: 2px solid blue;
+    border-radius: 25px;
+}
+
+.payment-button-wrapper {
+    position: relative;
+    width: 33%;
+    z-index: 9;
+}
+img.dollar-sign {
+    width: 15px;
+    display: block !importnat;
+    position: absolute;
+    top: 38%;
+    left: 35%;
+}
+.deducted p#amount-info {
+    display: none;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vue JavaScript Timeline App</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel='stylesheet'>
+  <link href="timeline-style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div style='height:3000px'></div>
+
+  <div id="timeline">
+    <span class='middle-line'></span>
+    <h2 id='our-history'> Our History</h2>
+    <timeline-right id='timeline-1'></timeline-right>
+    <timeline-left id='timeline-2'></timeline-left>
+    <timeline-right id='timeline-3'></timeline-right>
+  </div>
+
+  <script src="timeline.js"></script>
+  <script>
+    $("#timeline-1 .timeline-content,#timeline-1 .timeline-icon,#timeline-2 .timeline-content, #timeline-2 .timeline-icon,#timeline-3 .timeline-content, #timeline-3 .timeline-icon").css({
+      "opacity": "0"
+    });
+    $(window).scroll(function() {
+      var windowScroll = $(window).scrollTop();
+      var timelineOne = $("#timeline-1").offset().top - 200;
+      var timelineTwo = $("#timeline-2").offset().top - 200;
+      var timelineThree = $("#timeline-3").offset().top - 200;
+      if (windowScroll + 100 > timelineOne) {
+        $(".middle-line").css({
+          "height": "33.33%"
+        });
+        $("#timeline-1 .timeline-content, #timeline-1 .timeline-icon").css({
+          "opacity": "1"
+        });
+        $("#timeline-1 img").addClass("animated bounce");
+
+        if (windowScroll + 100 > timelineTwo) {
+          $(".middle-line").css({
+            "height": "66.66%"
+          });
+          $("#timeline-2 .timeline-content, #timeline-2 .timeline-icon").css({
+            "opacity": "1"
+          });
+          $("#timeline-2 img").addClass("animated slideInRight");
+
+          if (windowScroll + 100 > timelineThree) {
+            $(".middle-line").css({
+              "height": "100%"
+            });
+            $("#timeline-3 .timeline-content, #timeline-3 .timeline-icon").css({
+              "opacity": "1"
+            });
+            $("#timeline-3 img").addClass("animated jello");
+          } else {
+            $("#timeline-3 .timeline-content, #timeline-3 .timeline-icon").css({
+              "opacity": "0"
+            });
+            $("#timeline-3 img").removeClass("animated jello");
+          }
+        } else {
+          $("#timeline-2 .timeline-content, #timeline-2 .timeline-icon").css({
+            "opacity": "0"
+          });
+          $("#timeline-2 img").removeClass("animated slideInRight");
+        }
+      } else {
+        $(".middle-line").css({
+          "height": "0%"
+        });
+        $("#timeline-1 .timeline-content, #timeline-1 .timeline-icon").css({
+          "opacity": "0"
+        });
+        $("#timeline-1 img").removeClass("animated bounce");
+      }
+    });
+  </script>
+
+</body>
+
+</html>

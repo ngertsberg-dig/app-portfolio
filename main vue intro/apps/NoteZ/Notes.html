@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+
+<head>
+  <meta charset="UTF-8">
+  <title> </title>
+  <!-- If IE use the latest rendering engine -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Set the page to the width of the device and set the zoon level -->
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <!-- BOOTSTRAP REFERENECE -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/store.js/1.3.20/store.min.js"></script>
+<script src = 'microlight/microlight.js'></script>
+<link href = 'css/index.css' rel = 'stylesheet'>
+</head>
+<body>
+  <div id = 'app'>
+    <div id = 'save-notification'>
+      <div class = 'notification-logo'>
+          <i class="fa fa-save"></i>
+      </div>
+      <div class = 'notification-text'>
+          <h2>Notes Saved!</h2>
+      </div>
+    </div>
+    <div class = 'save-button col-NZ-12'>
+    <button @click ='save'> <i class="fa fa-save"></i></button>
+  </div>
+      <div class = 'note-list'>
+         <ul style = 'list-style:none;' class = 'col-NZ-12'>
+           <li v-for = 'note in notes'>
+              <h2 contenteditable="true">{{note.title}}<h2>
+                  <div class = 'delete-note' @click = 'deleteNote'><i class="fa fa-times-circle"></i></div>
+                  <div class = 'copy-paste-note' ><i class="fa fa-clipboard" @click = 'copy'></i></div>
+                    <p style = 'font-size:18px;' class = 'microlight'contenteditable="true"> {{note.message}}</p>
+                    <small class = 'hidden-copy-code'>{{note.hidden}}</small>
+                  <!-- SHOW MORE BUTTON DISABLED FOR NOW -->
+                   <!-- <div class = 'show-more'>
+                    <i class="fa fa-plus"></i>
+                  </div> -->
+           </li>
+         </ul>
+      </div>
+<!-- ADD NOTES PAGE  -->
+      <div class = 'back-home' v-if = "showNote">
+          <i class="fa fa-arrow-left" @click = "togglePages"></i>
+      </div>
+              <div class = 'input-code-container'>
+                  <textarea></textarea>
+            </div>
+        <div class = 'add-note-page col-NZ-12' v-if = "showNote">
+            <input type = 'text' class = 'title-input'value = 'Note Title' @click = 'clearInputTitle'>
+            <div class = 'submit-button col-NZ-12'>
+              <button @click = 'submitNote' style ='color:#B5F7FF;'> Add Note </button>
+            </div>
+        </div>
+        <div class = 'add-note col-NZ-5' @click = "togglePages" v-if = 'showHome'>
+            <i class="fa fa-plus"></i>
+        </div>
+
+    </div>
+
+    <!-- Vue JS script has to be loaded AFTER the HTML content or it wont find its target -->
+<script src = 'js/index.js'></script>
+</body>
+</html>

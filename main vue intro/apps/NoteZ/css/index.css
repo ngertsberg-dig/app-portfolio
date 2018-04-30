@@ -1,0 +1,316 @@
+:root { --mainBackgroundColor: white; --fontColor: black; }
+ * { box-sizing: border-box; }
+[class*="col-NZ"] { float: left; }
+.show-on-mobile, .show-on-tablet { display: none}
+.white-text { color: white; }
+.col-NZ-1{ width: 8.33%; }
+.col-NZ-2 { width: 16.66%; }
+.col-NZ-3 { width: 25%; }
+.col-NZ-4 { width: 33.33%; }
+.col-NZ-5 { width: 41.66%; }
+.col-NZ-6 { width: 50% }
+.col-NZ-7 { width: 58.33% }
+.col-NZ-8 { width: 66.66% }
+.col-NZ-9 { width: 75% }
+.col-NZ-10 { width:83.33% }
+.col-NZ-11 { width: 91.66% }
+.col-NZ-12 { width: 100% }
+  @media(max-width: 1000px) {
+.hide-on-tablet { display: none; }
+.show-on-tablet { display: block; }
+.col-NZ-1-tablet { width: 8.33%; }
+.col-NZ-2-tablet { width: 16.66%; }
+.col-NZ-3-tablet { width: 25%; }
+.col-NZ-4-tablet { width: 33.33%; }
+.col-NZ-5-tablet { width: 41.66%; }
+.col-NZ-6-tablet{ width: 50%; }
+.col-NZ-7-tablet { width: 58.33%; }
+.col-NZ-8-tablet { width: 66.66%; }
+.col-NZ-9-tablet { width: 75%; }
+.col-NZ-10-tablet { width: 83.33%; }
+.col-NZ-11-tablet { width: 91.66%; }
+.col-NZ-12-tablet { width: 100%; }}
+   @media(max-width: 767px) {
+.hide-on-mobile { display: none; }
+.show-on-mobile { display: block; }
+.col-NZ-1-mobile { width: 8.33%; }
+.col-NZ-2-mobile { width: 16.66%; }
+.col-NZ-3-mobile { width: 25%; }
+.col-NZ-4-mobile { width: 33.33%; }
+.col-NZ-5-mobile { width: 41.66%; }
+.col-NZ-6-mobile{ width: 50%; }
+.col-NZ-7-mobile { width: 58.33%; }
+.col-NZ-8-mobile { width: 66.66%; }
+.col-NZ-9-mobile { width: 75%; }
+.col-NZ-10-mobile { width: 83.33%; }
+.col-NZ-11-mobile { width: 91.66%; }
+.col-NZ-12-mobile { width: 100%; }
+ }
+
+
+body {
+   background-color: #252627;
+}
+h1,h2,h3,h4,h5,p,i,li{
+ color:#B5F7FF;;
+}
+.add-note.col-NZ-5 {
+   border: 2px solid #B5F7FF;;
+   text-align: center;
+   padding-top: 75px;
+   padding-bottom: 75px;
+   display: block;
+   margin: 0 auto !important;
+   margin-left: 25% !important;
+}
+.add-note:hover{
+ cursor:pointer;
+}
+.back-home i:hover{
+ cursor:pointer;
+}
+.show-more{
+ border:1px solid #B5F7FF;
+ padding-top:30px;padding-bottom:30px;
+ width:50%;
+ text-align:center;
+}
+textarea {
+   width: 75%;
+   margin-left: 12%;
+   padding-bottom: 200px;
+   background-color: black;
+   color:#B5F7FF;
+   border-radius: 5px;
+   border-color: #B5F7FF;
+}
+
+.add-note-page {
+   width: 75%;
+   margin-left: 12%;
+}
+
+.submit-button button {
+   width: 25%;
+   background-color: transparent;
+   border: 1px solid #B5F7FF;
+   color:#3C575B;
+   transition: all 0.8s ease;
+}
+
+.submit-button button:hover {
+   transition: all 0.8s ease;
+   background-color: #3C575B;
+   color: #B5F7FF;
+   border: 3px dashed #B5F7FF;
+
+
+}
+.microlight {
+   font-family : monospace;
+   white-space : pre;
+   background-color : #C4E4E8;
+ color            : #B5F7FF;
+ border:1px solid #B5F7FF;
+ background-color:rgb(41, 60, 65);
+}
+ul {
+   padding-right: 100px;
+   padding-left: 100px;
+}
+
+.show-more {
+   width: 15% !important;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   margin: 0 auto;
+   margin-top: 25px;
+}
+
+.add-note {
+   width: 30%;
+   margin-left: 0px !important;
+   padding-left: 0px;
+   padding-top: 25px !important;
+   padding-bottom: 25px !Important;
+}
+
+.add-note.col-NZ-5 {
+   margin-left: 35% !important;
+}
+
+p.microlight {
+   height: auto;
+   padding-bottom: 20px;
+   padding-top: 20px;
+}
+
+.add-note i {
+   font-size: 50px;
+}
+
+.title-input {
+   color: #B5F7FF;
+   background-color: black;
+   border: 2px solid #b1f1f9;
+   margin-bottom: 5px;
+   text-align: center;
+}
+
+.add-note-page,.submit-button {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+textarea {
+   padding-top: 10px;
+}
+.back-home i {
+   font-size: 40px;
+   position: relative;
+   left: 5%;
+   top: 30px;
+}
+p.microlight {
+   padding-left: 10px;
+}
+
+
+.add-note.col-NZ-5 {
+   margin-bottom: 200px !Important;
+   transition: all 0.5s linear;
+}
+
+.add-note.col-NZ-5:hover {
+
+   transform: scale(1.05);
+   transition: all 0.5s ease;
+}
+textarea {
+   padding-left: 10px;
+}
+.add-note.col-NZ-5 {
+   position: relative;
+   overflow: hidden;
+   ; }
+
+.add-note.col-NZ-5::after {
+   content: '';
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   left: -100%;
+   background-color: rgb(181, 247, 255,0.8);
+   position: absolute;
+   transition: all 0.35s linear;
+   transform: skewX(40deg);
+}
+
+.add-note.col-NZ-5:hover::after {
+   left: -50%;
+   transition: all 0.35s linear;
+}
+
+.add-note.col-NZ-5::before {
+   content: '';
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   left: 100%;
+   background-color: rgb(41, 60, 65,0.8);
+   ; position: absolute;
+   transition: all 0.35s linear;
+   transform: skewX(40deg);
+}
+
+.add-note.col-NZ-5:hover::before {
+   left: 50%;
+   transition: all 0.35s linear;
+}
+.delete-note {
+    position: relative;
+}
+
+.delete-note i {
+    position: absolute;
+    left: 96%;
+    top: 10px;
+}
+.delete-note:hover{
+  cursor:pointer;
+}
+.copy-paste-note {
+    position: relative;
+}
+
+.copy-paste-note i {
+    position: absolute;
+    left: 96%;
+    top: 50px;
+}
+.copy-paste-note:hover{
+  cursor:pointer;
+}
+
+.save-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.save-button button {
+    border: none;
+    background: transparent;
+}
+
+.save-button i {
+    font-size: 30px;
+    border: 2px solid #b5f7ff;
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition: all 2s ease;
+}
+
+.save-button button:hover i {
+    background-color: #293c41 !important;
+    transition: all 2s ease;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 0%;
+}
+div#save-notification {
+    border: 2px solid #b3f3fb;
+    border-radius: 10px;
+    width: 25%;
+    height: 15%;
+    position: absolute;
+    top: 85%;
+    left: 75%;
+}
+
+#save-notification i {
+    font-size: 50px;
+}
+
+.notification-logo {
+    width: 25%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #b3f3fb;
+}
+
+.notification-text {
+    height: 100%;
+    width: 75%;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hidden-copy-code{
+    display:none;
+}
