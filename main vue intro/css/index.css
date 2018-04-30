@@ -1,0 +1,392 @@
+body {
+
+  background: #2C3E50;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(left, #4CA1AF, #2C3E50);
+  background: -o-linear-gradient(left, #4CA1AF, #2C3E50);
+  background: linear-gradient(to left, #4CA1AF, #2C3E50);
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.noteZButton {
+  background-color: rgb(181, 247, 255, 0.8);
+}
+#homeButton{
+      background-color: rgb(121, 247, 255, 0.8);
+}
+
+.calendarButton {
+background-color: #0c7a97;
+}
+
+.calendarButton:hover {
+box-shadow: 0 2px 15px 0 #0c7a97;
+}
+
+.colorButton {
+background-color: pink;
+}
+
+.colorButton:hover {
+box-shadow: 0 2px 15px 0 pink;
+}
+
+.monsterSlayerButton {
+background-color: #29b429;
+}
+
+.monsterSlayerButton:hover {
+box-shadow: 0 2px 15px 0 #29b429;
+}
+
+.directionalButton {
+background-color: #a6a5a5;
+}
+
+.directionalButton:hover {
+box-shadow: 0 2px 15px 0 #a6a5a5;
+}
+
+.netflixButton {
+background-color: #ff7575;
+}
+
+.netflixButton:hover {
+box-shadow: 0 2px 15px 0 #ff7575;
+}
+
+.pokemonButton {
+background-color: #ea1e1e;
+}
+
+.pokemonButton:hover {
+box-shadow: 0 2px 15px 0 #ea1e1e;
+}
+
+.timelineButton {
+background-color: #58587d;
+}
+
+.timelineButton:hover {
+box-shadow: 0 2px 15px 0 #58587d;
+}
+
+
+.trelloButton:hover {
+  box-shadow: 0 2px 15px 0 #42b883;
+}
+
+.noteZButton:hover {
+  box-shadow: 0 2px 15px 0 #9ad3dd;
+}
+.side-menu-wrapper {
+width: 15%;
+background-color: #28282887;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.weatherButton {
+background-color: #fff2a3;
+}
+.trelloButton {
+background-color: #4dba87;
+}
+
+.weatherButton:hover {
+box-shadow: 0 2px 15px 0 #fff2a3;
+}
+.side-menu-wrapper .menu-item-wrapper {
+width: 100% !Important;
+}
+
+.side-menu-wrapper a {
+width: 100vw !Important;
+}
+
+button {
+background: none;
+border: none;
+width: 95.5% !important;
+margin-top: 25px;
+}
+
+a {
+padding: 10px 0px;
+border-radius: 5px;
+}
+
+.side-menu-wrapper {
+float: left;
+}
+.side-menu-collapse-button-wrapper {
+width: 4%;
+float: left;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.chevron-collapse {
+background-color: #28282887;
+width: 100%;
+height: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-top-right-radius: 25px;
+border-bottom-right-radius: 25px;
+}
+
+.chevron-collapse i {
+color: white;
+font-size: 20px;
+}
+.chevron-collapse:hover{
+cursor:pointer;
+}
+.collapsed{
+transition:all 0.420s ease;
+width:0%;
+}
+.collapsed button{
+display:none;
+}
+.fa-chevron-left{
+transition:all 0.420s ease;
+}
+.collapsedChevron .fa-chevron-left{
+transition:all 0.820s ease;
+transform:rotate(180deg);
+}
+.side-menu-wrapper{
+transition:all 0.420s ease;
+}
+
+h1{
+margin:0px;
+}
+.main-app-image img {
+width: 80%;
+}
+
+.app-wrapper{
+height: 100vh;
+width: 81%;
+float: right;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+}
+.launchApp {
+width: 40%;
+font-size: 20px;
+margin: 0px;
+}
+
+.launchApp button {
+margin: 0px;
+}
+.trello-wrapper .main-app-image img {
+width: 60%;
+}
+.importance-wrapper img {
+width: 50%;
+}
+.netflix-wrapper img {
+width: 45%;
+}
+.app-wrapper{
+transition:all 0.35s ease;
+}
+.large-app-wrapper{
+transition:all 2s ease;
+width:95%;
+}
+h2.hover-info {
+display: inline;
+}
+
+.fa-question:before {
+border: 2px solid #9ee0e9;
+border-radius: 20px;
+padding: 10px;
+display: flex;
+}
+
+.hover-info:hover {
+cursor: pointer;
+}
+.importance-wrapper .hover-info::after {
+content: 'App that lets you organize notes with color coordination.';
+position: absolute;
+transition: all 0.55s ease;
+width: 400%;
+background-color: #4dba87;
+padding: 20px;
+color: white;
+border-radius: 20px;
+left: 150%;
+top: 50%;
+width: 0%;
+font-size: 0px;
+opacity: 0;
+}
+
+.notez-wrapper .hover-info::after {
+content: 'App that lets you copy and paste reusable code and save it for later use';
+position: absolute;
+transition: all 0.55s ease;
+width: 400%;
+background-color: #9cd7db;
+padding: 20px;
+color: white;
+border-radius: 20px;
+left: 150%;
+top: 50%;
+width: 0%;
+font-size: 0px;
+opacity: 0;
+}
+
+.weather-wrapper .hover-info::after {
+content: "App that shows you local barrie weather from Yahoo's weather API";
+position: absolute;
+transition: all 0.55s ease;
+width: 400%;
+background-color: #9cd7db;
+padding: 20px;
+color: white;
+border-radius: 20px;
+left: 150%;
+top: 50%;
+width: 0%;
+font-size: 0px;
+opacity: 0;
+}
+
+.calendar-wrapper .hover-info::after {
+content: "Calendar App that lets you see every payday for 17 weeks, shows you your monthly income, and lets you add deductables on your total monthly income from spenidng and keep track of where you spend your money";
+position: absolute;
+transition: all 0.55s ease;
+width: 400%;
+background-color: #9cd7db;
+padding: 20px;
+color: white;
+border-radius: 20px;
+left: 150%;
+top: 50%;
+width: 0%;
+font-size: 0px;
+opacity: 0;
+}
+
+.color-wrapper .hover-info::after {
+content: "Simple App that takes the color you enter in a textfield and turns the websites background the same color.";
+position: absolute;
+transition: all 0.55s ease;
+width: 400%;
+background-color: #ffc0cb;
+padding: 20px;
+color: white;
+border-radius: 20px;
+left: 150%;
+top: 50%;
+width: 0%;
+font-size: 0px;
+opacity: 0;
+}
+
+.direction-wrapper .hover-info::after {
+content: "Directional hover app where an opaque background is visible upon mouseover of an image and then it follows your mouse cursor from image to image";
+position: absolute;
+transition: all 0.55s ease;
+width: 400%;
+background-color: #ffc0cb;
+padding: 20px;
+color: white;
+border-radius: 20px;
+left: 150%;
+top: 50%;
+width: 0%;
+font-size: 0px;
+opacity: 0;
+}
+
+.monster-slayer-wrapper .hover-info::after {
+content: "Vue monster slayer app where you fight a monster with different kinds of JavaScript Logic";
+position: absolute;
+transition: all 0.55s ease;
+width: 400%;
+background-color: #29b429;
+padding: 20px;
+color: white;
+border-radius: 20px;
+left: 150%;
+top: 50%;
+width: 0%;
+font-size: 0px;
+opacity: 0;
+}
+
+.netflix-wrapper .hover-info::after {
+content: "Basic kind of netflix template using Vue JS and an API to grab resources and display them.";
+position: absolute;
+transition: all 0.55s ease;
+width: 400%;
+background-color: #ff7575;
+padding: 20px;
+color: white;
+border-radius: 20px;
+left: 150%;
+top: 50%;
+width: 0%;
+font-size: 0px;
+opacity: 0;
+}
+
+.pokemon-wrapper .hover-info::after {
+content: "Pokemon App that grabs every single pokemon from the pokemon api and then lists them from oldest to newest. You then have the option to choose two of the pokemon and have them battle against each other in the Monster Slayer Vue App.";
+position: absolute;
+transition: all 0.55s ease;
+background-color: #ff7575;
+padding: 20px;
+color: white;
+border-radius: 20px;
+left: 150%;
+top: 50%;
+width: 0%;
+font-size: 0px;
+opacity: 0;
+}
+
+.timeline-wrapper .hover-info::after {
+content: "Timeline App where the line through the middle follows with your scroll and the images appear responsivly and animated in order.";
+position: absolute;
+transition: all 0.55s ease;
+background-color: #58587d;
+padding: 20px;
+color: white;
+border-radius: 20px;
+left: 150%;
+top: 50%;
+width: 0%;
+font-size: 0px;
+opacity: 0;
+}
+
+.hover-info {
+position: relative;
+}
+
+.hover-info:hover::after {
+transition: all 0.85s ease;
+width: 400%;
+font-size: 15px;
+opacity: 1;
+}
