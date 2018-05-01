@@ -144,6 +144,20 @@
       `
     })
 
+    var spaceweb = Vue.component('spaceweb',{
+      template:`
+      <div class = 'app-wrapper spaceweb-wrapper'>
+        <h1>Space Web 2.0 <h2 class = 'hover-info'><i class="fa fa-question"></i></h2></h1>
+        <div class = 'main-app-image'>
+          <img src = 'i/spacewebimg.png'>
+        </div>
+        <a href='apps/Space Web 2.0/Planets(2).html' class='noteZButton launchApp'>
+          <button>Launch Space Web 2.0</button>
+        </a>
+      </div>
+      `
+    })
+
     var routes = [
       {path:'/',component:home},
       {path:'/notez',component:notez},
@@ -155,7 +169,8 @@
       {path:'/monsterslayer',component:monsterslayer},
       {path:'/netflix',component:netflix},
       {path:'/pokemon',component:pokemon},
-      {path:'/timeline',component:timeline}
+      {path:'/timeline',component:timeline},
+      {path:'/spaceweb',component:spaceweb}
     ]
 
     var router = new VueRouter({
@@ -182,7 +197,7 @@
               $(".chevron-collapse").fadeIn();
             },
             hideChevron(){
-              $(".chevron-collapse").fadeOut  ();
+              $(".chevron-collapse").fadeOut();
             }
           }
 

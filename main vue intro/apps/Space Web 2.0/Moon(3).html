@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang = "en-ca">
+<head>
+<meta charset = "UTF-8">
+<title> webpage </title>
+<link href = "css/MainCSS.css" rel = "stylesheet">
+<link href = "css/MoonCSS.css" rel = "stylesheet">
+<link rel="stylesheet" href="css/awesome/css/font-awesome.min.css">
+
+
+</head>
+<body>
+  <header>
+  <img src = "i/rocket.png" width = "50" height = "50" alt = "rocketship">
+    <nav>
+      <div id = "menuItems">
+
+        <div id = "dropdown1">
+
+      <a href = "index(1).html">  <span id = "menuitem1"> Home |</span></a>
+        <div id = "dropdown_content1" class = "dropdown_content">
+
+
+        </div>
+      </div>
+
+      <div id = "dropdown2">
+      <a href = "Planets(2).html">  <span id = "menuitem2"> Planets |</span></a>
+        <div id = "dropdown_content2" class = "dropdown_content">
+
+        </div>
+      </div>
+      <div id = "dropdown3">
+      <a href = "Moon(3).html">  <span id = "menuitem3"> Moon |</span></a>
+        <div id = "dropdown_content3" class = "dropdown_content">
+
+        </div>
+      </div>
+      <div id = "dropdown4">
+        <a href = "Mars(4).html"><span id = "menuitem4"> Mars |</span></a>
+        <div id = "dropdown_content4" class = "dropdown_content">
+
+        </div>
+      </div>
+      <div id = "dropdown5">
+        <a href = "Gallery(5).html"><span id = "menuitem5"> Gallery |</span></a>
+        <div id = "dropdown_content5" class = "dropdown_content">
+
+        </div>
+      </div>
+    </div>
+    </nav>
+
+  </header>
+
+<main>
+  <h1> The Moon </h1>
+  <img src = "i/moonLeft.jpg" alt = "moon" id = "moonBack" height = "600" >
+
+  <article>
+    <p>The moon is the easiest celestial
+        object to find in the night sky
+        when it's there. Earth's only natural
+        satellite hovers above us bright and round until
+        it seemingly disappears for a few nights. The rhythm
+        of the moon's phases has guided humanity for millennia
+        for instance, calendar months are roughly equal to the time it
+        takes to go from one full moon to the next.
+        <br><br>
+        Moon phases and the moon's orbit are mysteries to many.
+        For example, the moon always shows us the same face. That
+        happens because it takes 27.3 days both to rotate on its
+        axis and to orbit Earth. We see either the full moon, half
+        moon or no moon (new moon) because the moon reflects sunlight.
+        How much of it we see depends on the moon's position in relation
+        to Earth and the sun.
+    </p>
+  </article>
+</main>
+<div>
+  <i class="fa fa-angle-double-down" style = "font-size:3em;color:red;position:relative;left:40%;" aria-hidden="true"></i>
+  <p style = "display:inline;position:relative;left:42%;font-size:2em;color:white;"> Moon Cycle </p>
+  <i class="fa fa-angle-double-down" style = "font-size:3em;color:red;position:relative;left:44%;" aria-hidden="true"></i>
+</div>
+<div id = "moonCycle">
+
+  <img src = "i/phaseOne.png" alt = "new moon" style = "" id = "moon"  class = "one">
+
+  <img src = "i/phaseTwo.png" alt = "new moon" >
+
+  <img src = "i/phaseThree.png" alt = "new moon">
+
+  <img src = "i/phaseFour.png" alt = "new moon">
+
+  <img src = "i/phaseFive.png" alt = "new moon">
+
+  <img src = "i/phaseSix.png" alt = "new moon">
+
+  <img src = "i/phaseSeven.png" alt = "new moon">
+
+  <img src = "i/phaseEight.png" alt = "new moon">
+
+</div>
+<div id = "moonNames">
+  <label class = "one"> New Moon </label>
+  <label> Waxing Crescent </label>
+  <label> First Quarter </label>
+  <label> Waxing Gibbous </label>
+  <label> Full Moon </label>
+  <label> Wanning Gibbous </label>
+  <label> Last quarter </label>
+  <label> Wanning Crescent </label>
+
+
+
+</div>
+<script>
+
+window.addEventListener("scroll",function(){
+  var YPOS = window.pageYOffset;
+  var moons = document.getElementById("moonCycle");
+  if(YPOS =100){
+    moons.style.opacity = "1";
+  }
+})
+</script>
+
+</body>
+</html>

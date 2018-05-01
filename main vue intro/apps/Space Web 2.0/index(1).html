@@ -1,0 +1,188 @@
+  <!DOCTYPE html>
+  <html lang = "en-ca">
+  <head>
+    <meta charset = "UTF-8">
+    <title>Assignment #2 </title>
+
+    <link href = "css/MainCSS.css" rel = "stylesheet">
+    <style>
+
+    </style>
+  </head>
+  <body>
+  <div id = "wrap">
+
+
+
+
+
+
+
+    <!-- main navigation of the page !-->
+    <header>
+    <img src = "i/rocket.png" width = "50" height = "50" alt = "rocketship">
+      <nav>
+        <div id = "menuItems">
+
+          <div id = "dropdown1">
+
+        <a href = "index(1).html">  <span id = "menuitem1"> Home |</span></a>
+          <div id = "dropdown_content1" class = "dropdown_content">
+
+
+          </div>
+        </div>
+
+        <div id = "dropdown2">
+        <a href = "Planets(2).html">  <span id = "menuitem2"> Planets |</span></a>
+          <div id = "dropdown_content2" class = "dropdown_content">
+
+          </div>
+        </div>
+        <div id = "dropdown3">
+        <a href = "Moon(3).html">  <span id = "menuitem3"> Moon |</span></a>
+          <div id = "dropdown_content3" class = "dropdown_content">
+
+          </div>
+        </div>
+        <div id = "dropdown4">
+          <a href = "Mars(4).html"><span id = "menuitem4"> Mars |</span></a>
+          <div id = "dropdown_content4" class = "dropdown_content">
+
+          </div>
+        </div>
+        <div id = "dropdown4">
+          <a href = "Gallery(5).html"><span id = "menuitem5"> Gallery |</span></a>
+          <div id = "dropdown_content5" class = "dropdown_content">
+
+          </div>
+        </div>
+      </div>
+      </nav>
+
+    </header>
+
+<!-- make the image in the background scroll with the website creating a 3d effect aka 'parallax'!-->
+  <div class = "parallaxRover">
+      <div id = "popup">
+
+          <h1> Welcome To the Space Web </h1>
+          <button id = "popup_button"> ENTER </button>
+
+      </div>
+    <div id = "curved">
+      <!-- wacky characters rotated in all degrees !-->
+      <p class = "char1">S</p>
+      <p class = "char2">P</p>
+      <p class = "char3">A</p>
+      <p class = "char4">C</p>
+      <p class = "char5">E</p>
+      <p class = "char7">W</p>
+      <p class = "char8">E</p>
+      <p class = "char9">B</p>
+
+    </div>
+<!-- two images that show after one another when the first one becomes completely opaque due to the key frame used !-->
+    <div id = "spaceFade">
+    <img id = "picture1" src = "i/space4.jpg" alt = "space" height = "400" width = "400" style = "animation:slideshow2 7s infinite ease-in-out;">
+    <img id = "picture2" src = "i/space3.jpg" alt = "space" height = "400" width = "400">
+    <article id = "underWelcome">
+      <p> This whole website is created by Nickey Gertsberg and all the images are from free source image sharing communities
+        with no copyrights intended for educational and recreational purposes! enjoy!.
+      </p>
+    </article>
+
+  </div>
+    <article id = "welcome">
+      <p>Welcome to my space web page! scroll down to explore some parallax pictures and get a feel for the universe
+        and navigate throughout the top menu through the planet JavaScript demo, Moon and Mars pages, and the gallery
+        where all the pages beautiful images are presented in a parallax style for full immersion!
+        </p>
+
+
+    </article>
+
+
+
+
+  </div>
+<!-- parallax one !-->
+  <div id = "parallax1"></div>
+  <h2 style = "color:red;text-align:center;"> Space is nice </h2>
+<!-- parallax two !-->
+  <div id = "parallax2"></div>
+  <!-- parallax three !-->
+  <div id = "parallax3"></div>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+<!-- JavaScript !-->
+  <script>
+
+  /* scroll function to find the y-position */
+  function scroll(){
+  var parallax3 = document.getElementById("parallax3");
+  var parallax2 = document.getElementById("parallax2");
+  var parallax = document.getElementById("parallax1");
+  var y_position = window.pageYOffset; //get scroll data
+  var popupDIV = document.getElementById("popup");
+  /* REMOVE popup without pressing enter if you scroll instead */
+  if(y_position>235){
+    popupDIV.style.zIndex= "-1";
+    popupDIV.style.opacity = "0";
+  }
+  if (y_position>300){  //if you scroll 300 pixels show parallax one otherwise dont show it.
+  /* parallax 1 scroll opacity function */
+    parallax.style.opacity = "1";
+  }
+  else{
+    parallax.style.opacity = "0";
+  }
+
+  /* parallax 2 scroll opacity function */
+  if (y_position>700){
+    parallax2.style.opacity = "1";
+  }
+  else{parallax2.style.opacity = "0";}
+  /* parallax 3 scroll opacity function */
+  if (y_position>1400){
+    parallax3.style.opacity = "1";
+  }
+  else{parallax3.style.opacity = "0";}
+
+  }
+  /* add a scroll listener to the webpage(window)*/
+  window.addEventListener("scroll",scroll);
+
+
+
+  /*popup to enter the site */
+  var popupButton = document.getElementById("popup_button");
+  popupButton.addEventListener("click", click);
+
+  function click(){
+  var popupDIV = document.getElementById("popup");
+
+
+  popupDIV.style.zIndex= "-1";
+  popupDIV.style.opacity = "0";
+
+  }
+
+
+  </script>
+
+  </body>
+
+  </html>

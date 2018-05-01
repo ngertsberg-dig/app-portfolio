@@ -222,6 +222,8 @@ display: flex;
 .hover-info:hover {
 cursor: pointer;
 }
+
+/* tooltips */
 .importance-wrapper .hover-info::after {
 content: 'App that lets you organize notes with color coordination.';
 position: absolute;
@@ -367,6 +369,22 @@ opacity: 0;
 
 .timeline-wrapper .hover-info::after {
 content: "Timeline App where the line through the middle follows with your scroll and the images appear responsivly and animated in order.";
+position: absolute;
+transition: all 0.55s ease;
+background-color: #58587d;
+padding: 20px;
+color: white;
+border-radius: 20px;
+left: 150%;
+top: 50%;
+width: 0%;
+font-size: 0px;
+opacity: 0;
+}
+
+.spaceweb-wrapper .hover-info::after {
+content: '\f185 \f186';
+font-family:fontawesome;
 position: absolute;
 transition: all 0.55s ease;
 background-color: #58587d;

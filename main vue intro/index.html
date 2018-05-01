@@ -19,6 +19,9 @@
   <link href="https://cdn.jsdelivr.net/npm/vuesax/dist/vuesax.css" rel="stylesheet">
   <script src='apps/NoteZ/microlight/microlight.js'></script>
   <link href = 'css/index.css' rel ='stylesheet'>
+  <style>
+
+</style>
   <body>
 <div id = 'intro-vue-page'>
   <div class = 'side-menu'>
@@ -67,13 +70,19 @@
         <router-link to = '/timeline'>
         <li><div class = 'menu-item-wrapper'><a href='#' class='timelineButton'><button>Timeline App</button></a></div></li>
         </router-link>
+
+        <router-link to = '/spaceweb'>
+        <li><div class = 'menu-item-wrapper'><a href='#' class='timelineButton'><button>Space Web 2.0</button></a></div></li>
+        </router-link>
       </ul>
     </div>
     <div class = 'side-menu-collapse-button-wrapper' @mouseover = 'showChevron'>
         <div class = 'chevron-collapse' @click = 'collapseMenu'><i class = 'fa fa-chevron-left'></i></div>
     </div>
   </div>
+  <transition name = 'fade'>
 <router-view></router-view>
+  </transition>
 </div>
   <script src = 'js/index.js'></script>
 </body>

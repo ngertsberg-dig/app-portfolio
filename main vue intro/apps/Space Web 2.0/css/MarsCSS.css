@@ -1,0 +1,118 @@
+<style>
+
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+header{
+  background-image:URL("../i/stars.jpg");
+}
+body{
+
+  height:140em;
+  width:100%;
+  font-size:62.5%;
+  font-family:tahoma;
+  font-family:Impact;
+  margin:auto;
+  background-color:#7ec0ee;
+  background-image:URL("../i/stars.jpg");
+
+
+
+
+}
+/* Fade in mars*/
+@keyframes fadeIn{
+  0%{transform:translateY(20em);opacity:0;}
+  100%{opacity:1;}
+}
+/*Fade in header */
+@keyframes fadeInHeader{
+  0%{opacity:0;}
+
+  50%{transform:scale(4);opacity:1;}
+  100%{opacity:1;}
+}
+/*Whole main part of the page */
+#marsIntro{
+  animation:fadeIn 1s ease-in;
+background-image:URL("../i/Mars.jpg");
+width:100%;
+height:25%;
+background-position: center;
+background-size: cover;
+
+}
+
+#marsIntro p {
+  color:#f47449;
+  width:35%;
+  font-size:150%;
+  margin-left:1em;
+  margin-top:5em;
+  float:left;
+  max-height: 25%;
+
+
+}
+/* some media screens so the paragraphs dont clip*/
+@media (max-width:600px){
+  header img{
+    display:none;
+  }
+
+}
+@media (max-width:800px){
+  #marsIntro p{
+    font-size:1.5em;
+    margin-top:2em;
+  }
+}
+#marsIntro h1{
+  font-size:3.5em;
+
+  color:red;
+  text-decoration:underline;
+  margin-left:25%;
+  animation:fadeInHeader 2.5s ease;
+}
+/* parallax */
+#parallax{
+  width:100%;
+  height:25%;
+  background-image:URL("../i/marsLand.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#marsEarth{
+  width:35%;
+  float:right;
+  border-radius:20px;
+  box-shadow:15px 15px 15px black;
+}
+#marsCompare p{
+  opacity:1;
+
+  box-shadow:15px 15px 15px black;
+  background-color:#5c6066;
+  border-radius:5px;
+  color:#f47449;
+  text-align: center;
+  width:50%;
+  float:left;
+  margin-left:2em;
+  font-size:200%;
+  margin-top:2em;
+}
+
+#backToTop{
+  margin-left:40%;
+
+  width:40%;
+}
+
+
+
+
+
+</style>

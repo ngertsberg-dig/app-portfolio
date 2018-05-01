@@ -1,0 +1,177 @@
+<style>
+
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+header{
+  background-image:URL("../i/stars.jpg");
+}
+body{
+
+  height:140em;
+  width:100%;
+  font-size:62.5%;
+  font-family:tahoma;
+  font-family:Impact;
+  margin:auto;
+  background-color:#7ec0ee;
+  background-image:URL("../i/stars.jpg");
+
+
+
+
+}
+#gallery{
+  height:1000px;
+
+  width:100%;
+  position:absolute;
+  top:15em;
+}
+#background{
+  width:100%;
+  height:100%;
+  background-color:black;
+  opacity:0.7;
+}
+#images img{
+
+  width:24%;
+}
+
+#image1{
+
+  width:100%;
+  height:40%;
+  background-image:URL("../i/space.jpg");
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center;
+}
+#image2{
+
+  width:100%;
+  height:40%;
+  background-image:URL("../i/space2.jpg");
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center;
+}
+#image3{
+
+  width:100%;
+  height:40%;
+  background-image:URL("../i/space3.jpg");
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center;
+}
+#image4{
+
+  width:100%;
+  height:40%;
+  background-image:URL("../i/space4.jpg");
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center;
+}
+#image5{
+
+  width:100%;
+  height:40%;
+  background-image:URL("../i/space5.jpg");
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center;
+}
+#image6{
+
+  width:100%;
+  height:40%;
+  background-image:URL("../i/space6.jpg");
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center;
+}
+#image7{
+
+  width:100%;
+  height:40%;
+  background-image:URL("../i/space7.jpg");
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center;
+}
+#image8{
+
+  width:100%;
+  height:40%;
+  background-image:URL("../i/space8.jpg");
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center;
+}
+#image9{
+
+  width:100%;
+  height:40%;
+  background-image:URL("../i/moonSurface.jpg");
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center;
+}
+#image10{
+
+  width:100%;
+  height:40%;
+  background-image:URL("../i/marsLand.jpg");
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center;
+}
+#image11{
+
+  width:100%;
+  height:40%;
+  background-image:URL("../i/curiosity.jpg");
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center;
+}
+#image12{
+
+  width:100%;
+  height:40%;
+  background-image:URL("../i/death_valley.jpg");
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center;
+}
+#image13{
+
+  width:100%;
+  height:40%;
+  background-image:URL("../i/Mars.jpg");
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center;
+}
+#image14{
+
+  width:100%;
+  height:40%;
+  background-image:URL("../i/moonLeft.jpg");
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center;
+}
+#image15{
+
+  width:100%;
+  height:40%;
+  background-image:URL("../i/blue_planet.jpg");
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center;
+}
+
+</style>
